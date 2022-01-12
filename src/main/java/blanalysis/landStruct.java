@@ -83,7 +83,7 @@ public class landStruct {
     //Now this will start inspecting surrounding areas for fertile land from each coordinate
     private ArrayList<Integer> inspect(ArrayList<Integer> collectedAreas, int yCoord, int xCoord) {
         for(int y = yCoord; y < length; y++){
-            for(int x = xCoord; x < xCoord; x++){
+            for(int x = xCoord; x < breadth; x++){
                 if (land[y][x] == 1) { //starts the inspection if it has value 1; fertile land
                     int fertilePart = survey(land, y, x); //inspecting surrounding area
                     collectedAreas.add(fertilePart); //storing the area
