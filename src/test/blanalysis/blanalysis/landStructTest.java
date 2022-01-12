@@ -35,7 +35,7 @@ public class landStructTest {
         landStruct test3 = new landStruct("0 292 399 307");
         test3.placeBarrenRect("0 0 399 599");
         String out3 = test3.fertileLand();
-        assertEquals("No fertile land found", out3);
+        assertEquals("No fertile land", out3);
     }
 
     //Checking clearBarren method
