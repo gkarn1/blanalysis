@@ -151,17 +151,4 @@ public class landStruct {
     public final void clearBarren(){
         startAutoGriding();
     }
-
-    //Displaying grid
-    public void showGrid(){
-        for(int i = (length - 1); i >= 0; i--){
-            for(int j = 0; j < breadth; j++){
-                if(j == breadth - 1){
-                    System.out.println(land[i][j]);
-                }else{
-                    System.out.println(land[i][j]);
-                }
-            }
-        }
-    }
 }
